@@ -10,8 +10,8 @@ public:
             money +=money_per_week;
             money_per_week +=7;
         }
-        for (int i =0; i<count_of_days; i++ ){
-            money+=count_of_weeks+i+1;
+        for (int i =1; i<=count_of_days; i++ ){
+            money+=count_of_weeks+i;
         }
         return money;
     }
