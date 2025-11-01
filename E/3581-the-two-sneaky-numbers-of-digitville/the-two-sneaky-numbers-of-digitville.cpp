@@ -9,8 +9,8 @@ public:
             unique_numbers.insert(num);
             if (prev_size == unique_numbers.size()) {
                 result[count_elements++] = num;
-                // if (count_elements == 2)
-                //     break;
+                if (count_elements == 2)
+                    break;
             }
         }
         return result;
