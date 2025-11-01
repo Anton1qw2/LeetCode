@@ -8,8 +8,7 @@ public:
             const int prev_size = unique_numbers.size();
             unique_numbers.insert(num);
             if (prev_size == unique_numbers.size()) {
-                result[count_elements] = num;
-                count_elements++;
+                result[count_elements++] = num;
                 if (count_elements == 2)
                     break;
             }
