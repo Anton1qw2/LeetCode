@@ -10,6 +10,7 @@ public:
     static const constexpr auto sum_pair = [](int acc, const auto& pair) {
         return acc + pair.first * pair.second;
     };
+    
     vector<int> findXSum(vector<int>& nums, int k, int x) {
         int result_size = nums.size() - k + 1;
         std::vector<int> result(result_size, 0);
