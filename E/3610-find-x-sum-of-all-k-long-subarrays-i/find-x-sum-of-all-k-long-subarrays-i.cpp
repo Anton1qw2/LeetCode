@@ -12,7 +12,6 @@ public:
     };
     vector<int> findXSum(vector<int>& nums, int k, int x) {
         int result_size = nums.size() - k + 1;
-        std::cout << result_size;
         std::vector<int> result(result_size, 0);
         for (int i = 0; i < result_size; i++) {
             std::vector<std::pair<int, int>> coordinates(k, {0, 0});
